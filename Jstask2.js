@@ -13,12 +13,11 @@ function interestCalculator(param) {
         } else { param[i].rate = 1;
             
         }
-        param[i].interest = param[i].principal * param[i].time * param[i].rate/100;
-        
+        param[i].interest = (param[i].principal * param[i].time * param[i].rate) / 100;
     }
-    
-}
-var interestData = [param];
+    var interestData = [param];
 console.log(interestData);
 return interestData;
+}
+
 interestCalculator(data);
