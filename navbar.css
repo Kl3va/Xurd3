@@ -1,0 +1,108 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navbar .rate{
+    position: absolute;
+    left: 80px;
+    top: 180px;
+    height: 40px;
+    color:teal;
+    font-size: medium;
+    font-weight: 600;
+}
+.navbar .kleva{
+    position: absolute;
+    height: 100px;
+    left: 50px;
+    top: 75px;
+    border-radius: 50px;
+}
+.navbar {
+    position: fixed;
+    left: -220px;
+    height: 100%;
+    width: 140px;
+   background:linear-gradient(90deg,rgba(12, 18, 28, 0.61),rgba(6, 155, 212, .8));
+    padding: 250px 20px 100% 60px ;
+    transition: all .5s ease;
+}
+.navbar-items li a{
+    line-height: 50px;
+    display: block;
+    font-weight: 600;
+    font-size: large; 
+    text-decoration: blink;
+    transition: .4s;
+    color: whitesmoke;
+}
+.navbar-items li:hover{
+    padding-left: 20px;
+}
+.navbar-items li a:hover {
+    color: tomato;
+}
+#check {
+    display: none;
+}
+label #btn, label #cancel{
+    position: absolute;
+    cursor: pointer;
+    transition: all .5s;
+}
+label #btn{
+    margin-top: 20px;
+    left: 30px;
+    top: 0px;
+    font-size: 35px;
+    color: red;
+
+}
+label #cancel{
+    z-index: 1111;
+    left: -150px;
+    top: 9px;
+    font-size: 45px;
+    color:red;
+    transition: all .5s;
+}
+#check:checked ~ .navbar{
+    left:0px;
+}
+#check:checked ~ label #btn{
+    left:100px;
+    opacity: 0;
+        pointer-events: none; 
+    }
+#check:checked ~ label #cancel {
+       left:150px;
+    }
+    section{
+        background-image: url(https://res.cloudinary.com/xurd3/image/upload/v1586794706/navbar_ktmx6g.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+     .bar{
+         left: 40%;
+        border-radius: 10px 10px 10px 10px;
+        border: seagreen;
+        position: absolute;
+        color: indigo;
+        animation: colorchange 10s linear 2s infinite alternate none;
+    }
+    @keyframes colorchange{
+        0%{color: indigo;}
+        20%{color: lawngreen;}
+        40%{color: maroon;}
+        60%{color: midnightblue;}
+        80%{color: springgreen;}
+        100%{color: saddlebrown;}
+    }
