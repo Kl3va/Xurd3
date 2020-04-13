@@ -31,6 +31,7 @@ body{
     width: 140px;
    background:linear-gradient(90deg,rgba(12, 18, 28, 0.61),rgba(6, 155, 212, .8));
     padding: 250px 20px 100% 60px ;
+    opacity: 1;
     transition: all .5s ease;
 }
 .navbar-items li a{
@@ -107,10 +108,4 @@ label #cancel{
         80%{color: springgreen;}
         100%{color: saddlebrown;}
     }
-    @media (max-width:200px) { .bar{
-        left: 10%;
-        position: absolute;
-        color: indigo;
-        animation: colorchange 10s linear 2s infinite alternate none; }
-
-    }
+    
