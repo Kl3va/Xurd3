@@ -90,13 +90,14 @@ label #cancel{
         background-size: cover;
         height: 100vh;
     }
-     .bar{
+     .bar{ 
          left: 40%;
         border-radius: 10px 10px 10px 10px;
         border: seagreen;
         position: absolute;
         color: indigo;
         animation: colorchange 10s linear 2s infinite alternate none;
+        
     }
     @keyframes colorchange{
         0%{color: indigo;}
@@ -105,4 +106,11 @@ label #cancel{
         60%{color: midnightblue;}
         80%{color: springgreen;}
         100%{color: saddlebrown;}
+    }
+    @media (max-width:200px) { .bar{
+        left: 10%;
+        position: absolute;
+        color: indigo;
+        animation: colorchange 10s linear 2s infinite alternate none; }
+
     }
