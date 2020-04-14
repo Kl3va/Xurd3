@@ -29,9 +29,10 @@ body{
     left: -220px;
     height: 100%;
     width: 140px;
-   background:linear-gradient(90deg,rgba(12, 18, 28, 0.61),rgba(6, 155, 212, .8));
+   background:rgb(12, 18, 28);
     padding: 250px 20px 100% 60px ;
     opacity: 1;
+    top: 0;
     transition: all .5s ease;
 }
 .navbar-items li a{
@@ -92,20 +93,36 @@ label #cancel{
         height: 100vh;
     }
      .bar{ 
-         left: 40%;
-        border-radius: 10px 10px 10px 10px;
-        border: seagreen;
-        position: absolute;
-        color: indigo;
-        animation: colorchange 10s linear 2s infinite alternate none;
-        
+         text-align: center;
+         font-size: 40px;
+         font-weight: 500;
+         display: block;
+        background-color: black; 
+        color: indigo;  
     }
+    p{
+        color: indigo;
+        animation: colorchange 10s linear 2s infinite alternate none;  
+    }
+    
+    
     @keyframes colorchange{
         0%{color: indigo;}
-        20%{color: lawngreen;}
-        40%{color: maroon;}
-        60%{color: midnightblue;}
-        80%{color: springgreen;}
+        20%{color: crimson}
+        40%{color: lime}
+        60%{color: moccasin}
+        80%{color: crimson}
         100%{color: saddlebrown;}
+    }
+    @media (max-width:500px) {
+         .bar{ 
+            text-align: center;
+            display: block;
+           background-color: black; 
+           font-size:12px ; 
+           font-weight: 300;
+           color: indigo;
+        }
+
     }
     
