@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    color: whitesmoke;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+body {
+    background-color: rgb(12, 18, 28);
+}
+.home  {
+    display: flex;
+    flex-direction: row;
+    font-size: 22px;
+    font-weight: 800;
+    width: 100%;
+    height: 70px;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    box-sizing: border-box;
+    border-bottom: 1px solid tomato;
+    z-index: 1111;
+    background-color:navy;
+}
+.home .nav {
+    color: tomato;
+}
+ .first {
+    font-weight: 700;
+    font-size: 60px;
+    color: whitesmoke;
+}
+.page-up {
+    height: 200px;
+    width:1200px;
+    display: block;
+    position: relative;
+    top: 20px;
+    padding-top: 250px;
+    padding-left: 50px;
+}
+.paragraph {
+    display: block;
+    border: 2px solid tomato;
+    width: 500px;
+    padding: 10px 5px 10px 20px;
+    border-radius:20px 20px 20px 20px;
+
+
+}
+img {
+    height: 250px;
+    border-radius: 20px 20px 20px 20px;
+}
+.myself {
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    width: 100%;
+    justify-content: space-between;
+    align-items:flex-end;
+    position: relative;
+    top: 200px;
+}
+.initial {
+    height:100px ;
+    width: 700px;
+    padding: 20px;
+    align-self: flex-start;
+}
+.next {
+    align-self: flex-start;
+
+}
+.last{
+height: 100px;
+width:1000px;
+padding: 20px;
+align-self: flex-start;
+}
+.decorate, .bio {
+    font-size: 17px;
+    font-weight: 100;
+    font-family: 'Times New Roman', Times, serif;
+}
+ .fill { margin-top: 200px;
+     margin-left: 450px;
+     display: block;
+     position: relative;
+     top: 70px;
+     width: 500px;
+ }
+ input {
+     display: block;
+     width: 320px;
+     margin: 30px;
+     padding: 10px;
+     
+ }
+.submit {
+    color: tomato;
+    font-weight: 700;
+    font-size: 15px;
+    border-radius: 10px 10px 10px 10px;
+ }
+ label {
+     color: tomato;
+     margin-left: 30px;
+     padding-bottom: 10px;
+ }
+.bottom {
+    
+    padding:20px ;
+}
+.message {
+    margin-left: 30px;
+    width: 320px;
+    line-height: 70px;
+}
+.submit:hover {
+    background-color: blueviolet;
+}
+
+
+
+
+
+
+
+
