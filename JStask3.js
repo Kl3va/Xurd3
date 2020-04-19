@@ -28,5 +28,5 @@ function compute(num) {
     console.log(arr);
     //empty arrays are required to call the second parameter
     var arr = [];
-    compute(40);
+    compute(60);
     console.log(arr);
