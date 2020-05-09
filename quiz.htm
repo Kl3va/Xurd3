@@ -1,0 +1,41 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="quiz-app.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+    <script defer src="quiz.js"></script>
+    <title>QUIZ-APP</title>
+  </head>
+  <body>
+      <div class="header">
+    <h3>How well do you know me? lets find out...</h3>
+      </div>
+    <div class="container">
+      <div id="current-question" class="hide current-question">
+        
+      </div>
+      <div
+        style="margin-left: 90%; font-style: italic; font-weight: bold;"
+        class="hide"
+        id="of"
+      >
+      </div>
+      <div id="question-container" class="hide">
+        <div id="question">Question</div>
+        <div id="answer-buttons" class="button-grid">
+          <button class="btn"></button>
+          <button class="btn"></button>
+          <button class="btn"></button>
+          <button class="btn"></button>
+        </div>
+      </div>
+      <div class="Buttons">
+        <button id="start-btn" class="start-btn btn">Begin</button>
+        <button id="next-btn" class="next-btn btn hide"> >  </button>
+      </div>
+      <div id="final-score" class="hide final-score">Total score</div>
+      <div id="show-score" class="hide show-score"> 0 </div>
+    </div>
+  </body>
+</html>
